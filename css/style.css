@@ -331,3 +331,59 @@ margin-bottom: 25px;
   background-color: #b30230;
   color: green;
 }
+
+.about {
+    background-color: #9ecb3c;
+    /*background: linear-gradient(191deg, #a11028, #e17d60);*/
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+    }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 96%}
+      50%{background-position:100% 5%}
+      100%{background-position:0% 96%}
+  }
+    padding: 20px 0 10px;
+    text-align: center;
+  }
+
+  .contact {
+      background-color: white;
+      /*background: linear-gradient(191deg, #a11028, #e17d60);*/
+      background-size: 400% 400%;
+
+      -webkit-animation: AnimationName 10s ease infinite;
+      -moz-animation: AnimationName 10s ease infinite;
+      animation: AnimationName 10s ease infinite;
+
+      @-webkit-keyframes AnimationName {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+      }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 96%}
+        50%{background-position:100% 5%}
+        100%{background-position:0% 96%}
+    }
+      padding: 20px 0 10px;
+      text-align: center;
+    }
