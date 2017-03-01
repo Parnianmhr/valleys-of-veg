@@ -1,0 +1,333 @@
+/*added myself after*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/*END */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+header {
+  max-width: 940px;
+  width: 100%; /* will try to take up the full width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+header h1 a {
+  color: #4A4A4A;
+}
+
+header nav a {
+  color: #f5b723;
+}
+
+.logo {
+  padding-left: 20px;
+}
+
+.valley-gallery {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.valley-card {
+  background-color: #ECECEC;
+  width: calc(100%/3 - 40px);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.valley-img {
+  height: 150px;
+  overflow: hidden;
+}
+
+.valley-button {
+  display: inline-block;
+  background-color: #cc88ae;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .valley-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+  /* for tablet: */
+  .valley-card {
+        width: 45%;
+        margin: 20px 18px;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 900px) {
+  /* for laptops: */
+  .valley-card {
+        width: 30%;
+        margin: 20px 18px;
+    }
+}
+/*hamburger menu*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #cc88ae;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: white;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    text-align: right;
+    display: inline-block;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  ul.topnav {
+    width: 100%;
+  }
+
+  ul.topnav.active li:not(:first-child) {
+    display: block;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+/*end hamburger menu*/
+
+.banner {
+  background-color: #9ecb3c;
+  /*background: linear-gradient(191deg, #a11028, #e17d60);*/
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+  }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+/*second page: dinosares.html*/
+.dinosaurs {
+  max-width: 900px;
+  background-color: #e6e6e6;
+  margin:20px auto;
+  border-radius: 5px;
+  display: flex;
+  color: gray;
+  position: relative;
+}
+.dinosaurs ul {
+padding-left: 0;
+margin-bottom: 25px;
+}
+
+.dinosaurs ul li{
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+.dinosaurs ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #b30000;
+}
+
+.dinosaurs p {
+  margin-right: 20px;
+}
+.circle {
+  margin:25px 25px 12px 12px;
+}
+
+.dinosaurs img {
+  width: 150px;
+  height: 150px;
+  margin:25px 25px 12px 12px;
+}
+
+
+.line {
+  border-bottom: 1px solid green;
+}
+
+.button {
+   background-color: #b30000;
+   border: none;
+   color: white;
+   padding: 9px 15px;
+   text-align: center;
+   display: inline-block;
+   position: absolute;;
+   bottom: 15px;
+   right: 43px;
+   border-radius: 5px;
+}
+
+.testButton {
+  background-color: #57a894;
+  border: none;
+  color: white;
+  padding: 9px 15px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.testButton:link {
+  color: red;
+}
+.testButton:visited {
+  color: black;
+}
+.testButton:hover {
+  background-color: #b30000;
+  color: yellow;
+}
+.testButton:active{
+  background-color: #b30450;
+  color: blue;
+}
+.testButton:focus{
+  background-color: #b30230;
+  color: green;
+}
