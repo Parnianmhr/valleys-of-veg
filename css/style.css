@@ -46,6 +46,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #cc88ae;
 }
 
 ul {
@@ -132,9 +133,9 @@ footer {
         width: 45%;
         margin: 20px 18px;
     }
-    [class*="col-"] {
+    /*[class*="col-"] {
         width: 100%;
-    }
+    }*/
 }
 @media only screen and (min-width: 900px) {
   /* for laptops: */
@@ -244,7 +245,7 @@ ul.topnav li.icon {display: none;}
 }
 
 /*second page: dinosares.html*/
-.dinosaurs {
+.vegetable {
   max-width: 900px;
   background-color: #e6e6e6;
   margin:20px auto;
@@ -253,34 +254,42 @@ ul.topnav li.icon {display: none;}
   color: gray;
   position: relative;
 }
-.dinosaurs ul {
+.vegetable ul {
 padding-left: 0;
 margin-bottom: 25px;
 }
 
-.dinosaurs ul li{
+.vegetable ul li{
   text-decoration: none;
   display: inline;
   margin-right: 20px;
 }
 
-.dinosaurs ul li a {
+.vegetable ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: #b30000;
+  color: #cc88ae;
 }
 
-.dinosaurs p {
+.vegetable p {
   margin-right: 20px;
 }
+
+.vegetable p a{
+  color: #cc88ae;
+}
+
+.vegetable h2{
+  color: #707275;
+}
+
 .circle {
   margin:25px 25px 12px 12px;
 }
 
-.dinosaurs img {
+.vegetable img {
   width: 150px;
-  height: 150px;
-  margin:25px 25px 12px 12px;
+  margin:15px 25px 14px 23px;
 }
 
 
