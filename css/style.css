@@ -158,14 +158,14 @@ header nav a {
   padding-left: 20px;
 }
 
-.valley-gallery {
+.veg-gallery {
   flex: 1;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.valley-card {
+.veg-card {
   background-color: #ECECEC;
   width: calc(100%/3 - 40px);
   padding: 20px;
@@ -173,12 +173,12 @@ header nav a {
   margin: 20px;
 }
 
-.valley-img {
+.veg-img {
   height: 150px;
   overflow: hidden;
 }
 
-.valley-button {
+.veg-button {
   display: inline-block;
   background-color: #cc88ae;
   color: #fff;
@@ -194,7 +194,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-  .valley-card {
+  .veg-card {
         width: 100%;
         margin: 20px 0;
     }
@@ -204,7 +204,7 @@ footer {
 }
 @media only screen and (min-width: 600px) {
   /* for tablet: */
-  .valley-card {
+  .veg-card {
         width: 45%;
         margin: 20px 18px;
     }
@@ -214,7 +214,7 @@ footer {
 }
 @media only screen and (min-width: 900px) {
   /* for laptops: */
-  .valley-card {
+  .veg-card {
         width: 30%;
         margin: 20px 18px;
     }
