@@ -149,7 +149,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <div id="googleMap" class="w3-greyscale"></div>
+                <div id="googleMap" class="greyscale"></div>
             </div>
         </div>
         <a href="#myTopnav"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top</a>
@@ -189,7 +189,7 @@
     <!-- Add Google Maps -->
     <script>
         function myMap() {
-            myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            myCenter = new google.maps.LatLng(52.371320, 4.892665);
             var mapOptions = {
                 center: myCenter,
                 zoom: 12,
@@ -204,6 +204,9 @@
             });
             marker.setMap(map);
           }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gDdc42TRutP9wIOSvoigtBJnk1aqngM&callback=myMap">
     </script>
 </body>
 
