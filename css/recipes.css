@@ -1,0 +1,33 @@
+.flex-container {
+  display: flex;
+  padding: 0;
+  margin: 55px 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-container li img {
+  width: 200px;
+  height: 150px;
+}
+
+.flex-container li img:hover {
+  opacity: 0.5;
+}
+
+.flex-item {
+  background: seagreen;
+  width: 200px;
+  height: 150px;
+  margin: 0 50px 50px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
